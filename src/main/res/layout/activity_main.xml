@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity"
+        tools:openDrawer="end">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    style="@style/material_toolbar"
+                    android:layout_height="match_parent"
+                    app:layout_scrollFlags="scroll|enterAlways|snap"
+                    app:menu="@menu/main_menu"
+                    app:navigationIcon="@drawable/ic_menu"
+                    app:title="Restauarant Title" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <include layout="@layout/content" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <include layout="@layout/navigation_view_layout" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Restaurant" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Green_500</item>
+        <item name="colorPrimaryVariant">@color/Green_900</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Red_200</item>
+        <item name="colorSecondaryVariant">@color/Red_500</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="bottom_app_bar" parent="Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="hideOnScroll">true</item>
+        <item name="elevation">8dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="backgroundTint">#ff5e00</item>
+        <item name="fabAlignmentMode">end</item>
+        <item name="fabAnimationMode">scale</item>
+        <item name="fabCradleVerticalOffset">6dp</item>
+        <item name="fabCradleMargin">8dp</item>
+        <item name="fabCradleRoundedCornerRadius">50dp</item>
+    </style>
+
+    <style name="navigation_view_style" parent="Widget.MaterialComponents.NavigationView" >
+        <item name="android:background">@color/Red_50</item>
+        <item name="android:maxWidth">280dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+
+    </style>
+
+    <style name="material_toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/Red_50</item>
+        <item name="android:elevation">6dp</item>
+        <item name="navigationIconTint">@color/Red_200</item>
+        <item name="titleTextColor">@color/Red_200</item>
+        <item name="titleCentered">false</item>
+    </style>
+
+</resources>

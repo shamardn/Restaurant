@@ -1,0 +1,7 @@
+<com.google.android.material.navigation.NavigationView
+    android:id="@+id/navigation_view"
+    style="@style/navigation_view_style"
+    app:menu="@menu/navigation_drawer"
+    app:headerLayout="@layout/header_navigation_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Red_50">
+
+        <ImageView
+            android:id="@+id/item_iv_img"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img1" />
+
+        <TextView
+            android:id="@+id/item_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Pizza"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/item_iv_img"
+            app:layout_constraintTop_toTopOf="@+id/item_iv_img" />
+
+        <TextView
+            android:id="@+id/item_tv_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="Cheddar - Gouda - Blue - Swiss - Provolone - Munster - Parmesan –
+ Parmesan is best mixed with other cheeses and not used as the only cheese on a pizza "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/item_tv_moreDetails"
+            app:layout_constraintStart_toStartOf="@+id/item_tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/item_tv_title" />
+
+        <TextView
+            android:id="@+id/item_tv_moreDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="more"
+            android:textColor="@color/Red_900"
+            app:layout_constraintBottom_toBottomOf="@+id/item_tv_details"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/item_tv_customize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Customize"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:drawableEnd="@drawable/ic_go"
+            android:textColor="@color/Green_900"
+            app:layout_constraintStart_toStartOf="@+id/item_tv_details"
+            app:layout_constraintTop_toBottomOf="@+id/item_tv_details" />
+
+        <TextView
+            android:id="@+id/item_tv_fees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="149 EGP"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/item_tv_customize"
+            app:layout_constraintTop_toBottomOf="@+id/item_tv_customize" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/item_tv_fees"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_tv_fees"
+            app:layout_constraintTop_toTopOf="@+id/item_tv_fees">
+
+            <TextView
+                android:id="@+id/item_tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_orange_background"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:text="+ Add" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
